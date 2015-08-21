@@ -194,9 +194,9 @@
                                   "name" : "jolokia"
                                 } ],
                                 "env" : [ 
-                                    "JOLOKIA_PORT=8778",
-                                    "JOLOKIA_USER=admin",
-                                    "JOLOKIA_PASSWORD=admin"
+                                    { "name":"JOLOKIA_PORT", "value":"8778"},
+                                    { "name":"JOLOKIA_USER", "value":"admin"},
+                                    { "name":"JOLOKIA_PASSWORD", "value":"admin"}
                                 ]
                             }
                         ]
