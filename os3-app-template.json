@@ -188,7 +188,16 @@
                             {
                                 "name": "${APP_NAME}",
                                 "image": "library/${APP_NAME}:latest",
-                                "resources": {}
+                                "resources": {},
+                                "ports" : [ {
+                                  "containerPort" : 8778,
+                                  "name" : "jolokia"
+                                } ],
+                                "env" : [ 
+                                    "JOLOKIA_PORT=8778",
+                                    "JOLOKIA_USER=admin",
+                                    "JOLOKIA_PASSWORD=admin"
+                                ]
                             }
                         ]
                     }
